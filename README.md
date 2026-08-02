@@ -43,18 +43,12 @@ VITE_SUPABASE_URL=프로젝트_URL
 VITE_SUPABASE_PUBLISHABLE_KEY=Publishable_Key
 ```
 
-## Cloudflare Pages
+## Cloudflare 배포
 
-- Root directory: `plb-homepage`
-- Framework preset: `Vite`
+- Git 저장소: `psw3077/plb-paint-homepage`
+- Root directory: `/`
+- Production branch: `main`
 - Build command: `npm run build`
-- Build output directory: `dist`
-- Node.js version: `20`
-
-## 다음 작업
-
-- 실제 이미지 4개를 `public/`에 등록
-- 관리자 로그인
-- 문의 관리 대시보드
-- 제품·제조사·자료실 관리
-- 실제 배포 연결
+- Deploy command: `npx wrangler deploy`
+- Worker: `plb-homepage`
+- 도메인: `https://plbpaint.co.kr`
