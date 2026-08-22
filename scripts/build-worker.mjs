@@ -16,7 +16,7 @@ const workerSource = [
   '    const url = new URL(request.url);',
   "    if (request.method === 'GET' && ['/card', '/card/', '/card.html', '/card-pro', '/card-pro/'].includes(url.pathname)) {",
   '      const cardUrl = new URL(request.url);',
-  "      cardUrl.pathname = '/card/index.html';",
+  "      cardUrl.pathname = '/plb-card.html';",
   '      return env.ASSETS.fetch(new Request(cardUrl.toString(), request));',
   '    }',
   "    if (url.pathname === '/api/products' && request.method === 'GET') {",
