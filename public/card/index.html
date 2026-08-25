@@ -46,10 +46,10 @@
     </section>
 
     <section class="actions" aria-label="빠른 연락">
-      <a class="action primary" href="tel:01028516774">대표 직통<small>010-2851-6774</small></a>
-      <a class="action" href="tel:0553136778">회사 전화<small>055-313-6778</small></a>
-      <a class="action quote" href="https://plbpaint.co.kr/#contact">견적 문의<small>제품·납기 상담</small></a>
-      <button class="action" type="button" onclick="saveVCard()">연락처 저장<small>휴대폰에 저장</small></button>
+      <a class="action primary" data-card-event="phone_click" href="tel:01028516774">대표 직통<small>010-2851-6774</small></a>
+      <a class="action" data-card-event="phone_click" href="tel:0553136778">회사 전화<small>055-313-6778</small></a>
+      <a class="action quote" data-card-event="quote_click" href="https://plbpaint.co.kr/#contact">견적 문의<small>제품·납기 상담</small></a>
+      <button class="action" type="button" data-card-event="contact_save" onclick="saveVCard()">연락처 저장<small>휴대폰에 저장</small></button>
     </section>
 
     <div class="trust"><div><b>산업용 도료</b><span>현장 맞춤 상담</span></div><div><b>안정적인 재고</b><span>신속한 출고</span></div><div><b>전국 기업 납품</b><span>일정 맞춤 공급</span></div></div>
@@ -61,21 +61,21 @@
       <div class="business">페인트 제조사 공식 홈페이지<br>바로가기</div>
       <p class="proof">제품 정보와 기술자료는 각 제조사 공식 홈페이지에서 확인할 수 있습니다.</p>
       <div class="makers">
-        <a class="maker" href="https://www.kccworld.co.kr/" target="_blank" rel="noopener noreferrer"><strong>KCC</strong><span>제품·기술자료</span><em>공식 홈페이지 →</em></a>
-        <a class="maker" href="https://samhwa.com/" target="_blank" rel="noopener noreferrer"><strong>삼화페인트</strong><span>제품·컬러정보</span><em>공식 홈페이지 →</em></a>
-        <a class="maker" href="https://www.ckpc.co.kr/" target="_blank" rel="noopener noreferrer"><strong>조광페인트</strong><span>기술자료·MSDS</span><em>공식 홈페이지 →</em></a>
-        <a class="maker" href="https://www.jevisco.com/" target="_blank" rel="noopener noreferrer"><strong>제비스코</strong><span>제품정보</span><em>공식 홈페이지 →</em></a>
+        <a class="maker" data-card-event="website_click" href="https://www.kccworld.co.kr/" target="_blank" rel="noopener noreferrer"><strong>KCC</strong><span>제품·기술자료</span><em>공식 홈페이지 →</em></a>
+        <a class="maker" data-card-event="website_click" href="https://samhwa.com/" target="_blank" rel="noopener noreferrer"><strong>삼화페인트</strong><span>제품·컬러정보</span><em>공식 홈페이지 →</em></a>
+        <a class="maker" data-card-event="website_click" href="https://www.ckpc.co.kr/" target="_blank" rel="noopener noreferrer"><strong>조광페인트</strong><span>기술자료·MSDS</span><em>공식 홈페이지 →</em></a>
+        <a class="maker" data-card-event="website_click" href="https://www.jevisco.com/" target="_blank" rel="noopener noreferrer"><strong>제비스코</strong><span>제품정보</span><em>공식 홈페이지 →</em></a>
       </div>
     </section>
 
-    <section class="section"><div class="section-head"><div class="section-title">DIRECT CONTACT</div><div class="section-index">02</div></div><div class="contact"><div class="row"><b>휴대전화</b><a href="tel:01028516774">010-2851-6774</a></div><div class="row"><b>대표전화</b><a href="tel:0553136778">055-313-6778</a></div><div class="row"><b>팩스</b><span>055-313-6779</span></div><div class="row"><b>이메일</b><a href="mailto:plb6498@naver.com">plb6498@naver.com</a></div><div class="row"><b>주소</b><span>경상남도 김해시 호계로300번길 115-22, 가동(삼정동)</span></div></div></section>
+    <section class="section"><div class="section-head"><div class="section-title">DIRECT CONTACT</div><div class="section-index">02</div></div><div class="contact"><div class="row"><b>휴대전화</b><a data-card-event="phone_click" href="tel:01028516774">010-2851-6774</a></div><div class="row"><b>대표전화</b><a data-card-event="phone_click" href="tel:0553136778">055-313-6778</a></div><div class="row"><b>팩스</b><span>055-313-6779</span></div><div class="row"><b>이메일</b><a href="mailto:plb6498@naver.com">plb6498@naver.com</a></div><div class="row"><b>주소</b><span>경상남도 김해시 호계로300번길 115-22, 가동(삼정동)</span></div></div></section>
 
-    <section class="section"><div class="section-head"><div class="section-title">OFFICIAL CHANNELS</div><div class="section-index">03</div></div><div class="channels"><a class="channel" href="https://plbpaint.co.kr/">공식 홈페이지</a><a class="channel" href="https://blog.naver.com/plb6498" target="_blank" rel="noopener noreferrer">네이버 블로그</a><button class="channel" type="button" onclick="shareCard()">명함 보내기</button><button class="channel" type="button" onclick="copyCard()">링크 복사</button></div></section>
+    <section class="section"><div class="section-head"><div class="section-title">OFFICIAL CHANNELS</div><div class="section-index">03</div></div><div class="channels"><a class="channel" data-card-event="website_click" href="https://plbpaint.co.kr/">공식 홈페이지</a><a class="channel" data-card-event="blog_click" href="https://blog.naver.com/plb6498" target="_blank" rel="noopener noreferrer">네이버 블로그</a><button class="channel" type="button" data-card-event="share_click" onclick="shareCard()">명함 보내기</button><button class="channel" type="button" data-card-event="share_click" onclick="copyCard()">링크 복사</button></div></section>
     <section class="section"><div class="address"><strong>plbpaint.co.kr/card.html</strong><p>주식회사 피엘비 박상민 대표의 공식 전자명함입니다.</p></div></section>
     <footer class="footer"><b>주식회사 피엘비</b>산업용 페인트·분체도료·기능성 코팅 전국 기업 납품</footer>
   </main>
 
-  <nav class="dock" aria-label="고정 빠른 메뉴"><a class="primary-dock" href="tel:01028516774"><i>☎</i>대표 직통</a><a href="tel:0553136778"><i>℡</i>회사 전화</a><a href="https://plbpaint.co.kr/#contact"><i>＋</i>견적 문의</a><button type="button" onclick="shareCard()"><i>↗</i>명함 보내기</button></nav>
+  <nav class="dock" aria-label="고정 빠른 메뉴"><a class="primary-dock" data-card-event="phone_click" href="tel:01028516774"><i>☎</i>대표 직통</a><a data-card-event="phone_click" href="tel:0553136778"><i>℡</i>회사 전화</a><a data-card-event="quote_click" href="https://plbpaint.co.kr/#contact"><i>＋</i>견적 문의</a><button type="button" data-card-event="share_click" onclick="shareCard()"><i>↗</i>명함 보내기</button></nav>
   <script>
     const publicCard='https://plbpaint.co.kr/card.html?share=official-card';
     function shareData(){return{title:'박상민 대표 | 주식회사 피엘비',text:'주식회사 피엘비 박상민 대표입니다.\n산업용 페인트·분체도료·기능성 코팅 전국 납품을 상담합니다.',url:publicCard}}
