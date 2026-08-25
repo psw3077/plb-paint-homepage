@@ -83,6 +83,6 @@
     async function copyCard(){const d=shareData();const t=d.text+'\n'+d.url;try{await navigator.clipboard.writeText(t);alert('명함 주소를 복사했습니다.')}catch(e){prompt('아래 내용을 복사하세요.',t)}}
     function saveVCard(){const v=['BEGIN:VCARD','VERSION:3.0','N:박;상민;;;','FN:박상민','ORG:주식회사 피엘비','TITLE:대표이사','TEL;TYPE=CELL,VOICE:010-2851-6774','TEL;TYPE=WORK,VOICE:055-313-6778','TEL;TYPE=WORK,FAX:055-313-6779','EMAIL;TYPE=WORK:plb6498@naver.com','ADR;TYPE=WORK:;;호계로300번길 115-22, 가동(삼정동);김해시;경상남도;;;','URL:'+publicCard,'NOTE:산업용 페인트·분체도료·기능성 코팅 전국 납품 상담','END:VCARD'].join('\r\n');const b=new Blob(['\ufeff'+v],{type:'text/vcard;charset=utf-8'}),a=document.createElement('a'),u=URL.createObjectURL(b);a.href=u;a.download='피엘비_박상민_대표.vcf';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1000)}
   </script>
-</body>
+<script src="/card-analytics.js" data-card-id="plb_park_sangmin"></script></body>
 </html>
 
